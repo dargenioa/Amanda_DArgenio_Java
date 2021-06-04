@@ -6,7 +6,7 @@ public class Calculator implements com.company.interfaces.Arithmetic {
     }
 
     @Override
-    public int addInt(int x, int y) {
+    public int add(int x, int y) {
         int sum = 0;
         sum = (x + y);
         System.out.println(x + " + " + y + " = " + sum);
@@ -14,7 +14,7 @@ public class Calculator implements com.company.interfaces.Arithmetic {
     }
 
     @Override
-    public int subtractInt(int x, int y) {
+    public int subtract(int x, int y) {
         int difference = 0;
         difference = (x - y);
         System.out.println(x + " - " + y + " = " + difference);
@@ -22,14 +22,14 @@ public class Calculator implements com.company.interfaces.Arithmetic {
     }
 
     @Override
-    public int multiplyInt(int x, int y) {
+    public int multiply(int x, int y) {
         int product = 0;
         product = (x * y);
         System.out.println(x + " * " + y + " = " + product);
         return product;    }
 
     @Override
-    public int divideInt(int x, int y) {
+    public int divide(int x, int y) {
         int quotient = 0;
         quotient = (x / y);
         System.out.println(x + " / " + y + " = " + quotient);
@@ -37,7 +37,7 @@ public class Calculator implements com.company.interfaces.Arithmetic {
     }
 
     @Override
-    public double addDouble(double x, double y) {
+    public double add(double x, double y) {
         double result = 0;
         result = (x + y);
         System.out.println(x + " + " + y + " = " + result);
@@ -45,7 +45,7 @@ public class Calculator implements com.company.interfaces.Arithmetic {
     }
 
     @Override
-    public double subtractDouble(double x, double y) {
+    public double subtract(double x, double y) {
         double result = 0;
         result = (x - y);
         System.out.println(x + " - " + y + " = " + result);
@@ -53,7 +53,7 @@ public class Calculator implements com.company.interfaces.Arithmetic {
     }
 
     @Override
-    public double multiplyDouble(double x, double y) {
+    public double multiply(double x, double y) {
         double result = 0;
         result = (x * y);
         System.out.println(x + " * " + y + " = " + result);
@@ -61,7 +61,7 @@ public class Calculator implements com.company.interfaces.Arithmetic {
     }
 
     @Override
-    public double divideDouble(double x, double y) {
+    public double divide(double x, double y) {
         double result = 0;
         result = (x / y);
         System.out.println(x + " / " + y + " = " + result);

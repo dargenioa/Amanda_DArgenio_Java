@@ -5,15 +5,15 @@ public class CalculatorApplication {
 
         Calculator calculator = new Calculator();
 
-        calculator.addInt(1, 1);
-        calculator.subtractInt(23, 52);
-        calculator.multiplyInt(34, 2);
-        calculator.divideInt(12, 3);
-        calculator.divideInt(12, 7);
+        calculator.add(1, 1);
+        calculator.subtract(23, 52);
+        calculator.multiply(34, 2);
+        calculator.divide(12, 3);
+        calculator.divide(12, 7);
 
-        calculator.addDouble(3.4, 2.3);
-        calculator.subtractDouble(5.5,0.5);
-        calculator.multiplyDouble(6.7,4.4);
-        calculator.divideDouble(10.8,2.2);
+        calculator.add(3.4, 2.3);
+        calculator.subtract(5.5,0.5);
+        calculator.multiply(6.7,4.4);
+        calculator.divide(10.8,2.2);
     }
 }

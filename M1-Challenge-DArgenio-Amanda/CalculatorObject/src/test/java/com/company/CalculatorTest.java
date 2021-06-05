@@ -79,7 +79,7 @@ public class CalculatorTest {
 
     @Test
     public void shouldDivideTwoDoublesAndReturnQuotient() {
-        assertEquals(4.63, calculator.divide(10.2, 2.2), 1);
+        assertEquals(4.91, calculator.divide(10.8, 2.2), 1);
         assertEquals(7.75, calculator.divide(15.5, 2.0), 1);
         assertEquals(0.50, calculator.divide(20.03, 40.0), 1);
         assertEquals(.90, calculator.divide(81.05, 90.02), 1);

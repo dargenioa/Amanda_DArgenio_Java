@@ -1,6 +1,9 @@
 package com.company.randomquotegenerator.controller;
 
 import com.company.randomquotegenerator.models.Quote;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -24,5 +27,19 @@ public class QuoteController {
             new Quote(idCounter++, "Thich Nhat Hanh","The most precious gift we can offer others is our presence. When mindfulness embraces those we love, they will bloom like flowers."),
             new Quote(idCounter++, "Grace Hopper", "The most damaging phrase is, \"It's always been done this way\".")
     ));
+
+    @GetMapping(value = "/quote")
+    @ResponseStatus(value = HttpStatus.OK)
+    public Quote getRandomQuote() {
+
+        int minIndex = 1;
+        int maxIndex = quoteList.size();
+        int randomIndex = (int)Math.floor(Math.random() * (maxIndex - minIndex + 1));
+
+        Quote result = quoteList.get(randomIndex);
+        System.out.println(result);
+        return result;
+
+    }
 
 }

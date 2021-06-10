@@ -1,5 +1,7 @@
 package com.company.randomquotegenerator.controller;
 
+import com.company.randomquotegenerator.models.Quote;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,7 @@ public class QuoteControllerTest {
 
     @Test
     public void shouldReturnRandomQuoteWithAnIdBetween1And10() throws Exception {
+
 
         mockMvc.perform(get("/quote"))
                 .andDo(print())

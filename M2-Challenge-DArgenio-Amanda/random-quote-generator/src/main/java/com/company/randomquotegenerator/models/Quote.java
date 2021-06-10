@@ -13,6 +13,9 @@ public class Quote {
         this.quote = quote;
     }
 
+    public Quote() {
+    }
+
     public int getId() {
         return id;
     }

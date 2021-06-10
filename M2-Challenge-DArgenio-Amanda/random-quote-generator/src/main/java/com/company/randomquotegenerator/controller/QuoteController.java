@@ -35,7 +35,6 @@ public class QuoteController {
         int minIndex = 1;
         int maxIndex = quoteList.size();
         int randomIndex = (int) Math.floor(Math.random() * (maxIndex - minIndex + 1));
-        int index;
 
         Quote result = quoteList.get(randomIndex);
         System.out.println(result);
